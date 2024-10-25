@@ -29,10 +29,10 @@
 ## Cómo Probar
 
 1. Asegúrate de tener Node.js instalado en tu computadora.
-2. Dirígete a la carpeta `src`.
+2. Dirígete a la carpeta raiz `kata`.
 3. Instala el servidor de Node si aún no lo tienes e inicialo: 
    ```bash
    npm install -g http-server
    
    http-server .
-
+4. Abre con el navegador: http://127.0.0.1:8080/src/index.html
