@@ -158,6 +158,7 @@ var pokemon = {
         let propertiesToMap = { ...this.dataMapped };
         propertiesToMap.firstLevel = 'results';
         if (filterType) {
+            this.deleteData = false;
             switch (filterType) {
                 case "color":
                     this.filteredByColor = [];
