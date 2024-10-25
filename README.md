@@ -1,32 +1,38 @@
 # kataSeatCode
-Mandatory points:
-Done -  Use Less to create styles, compile Less files to locally generate CSS, and add them to the project.
-Done -  Less/CSS code must be writen using BEM metodologhy.
-Done -  JavaScript must be written in Vanilla No jQuery, React ...).  Use HTML5 and CSS3.
-OK   -  Third-party libraries are permited, Use CDNJS for include it.
-Done -  Responsive: The given prototype is designed for mobile, but it should be responsive Mobile First. For example, on desktop screens, the product grid may change to 4 columns.
 
-Nota: 
+## Puntos Obligatorios
 
-- todos los filtros diponibles se recogen de los endpoints.
-- la estructura del proyecto es un guiño a como se trabaja en AEM, (usando nombres de paquetes como clientlib, o dividir los styles por componente)
+- ✅ **Uso de Less para Estilos**: Los estilos están escritos en Less, compilados localmente para generar CSS y añadidos al proyecto.
+- ✅ **Metodología BEM**: El código Less/CSS sigue la metodología BEM.
+- ✅ **JavaScript**: Escrito en JavaScript Vanilla (sin jQuery, React, etc.). Utiliza HTML5 y CSS3.
+- ✅ **Bibliotecas de Terceros**: Permitidas. Incluidas vía CDNJS.
+- ✅ **Diseño Responsive**: El prototipo está diseñado para móvil primero, pero es totalmente adaptable. En pantallas de escritorio, la cuadrícula de productos se ajusta a 4 columnas.
 
-Optional
-SEO, Accesibility & Performance - añadidos unos cuantos metas, alternates y demás. En cuanto a la performace, aparte de cachear el payload de las llamadas, también se ha implementado un cacheo de imágenes en memoria.
-Documentation - falta de tiempo
-Animations - sobre el hover en las cards
-Caching the payload - implementado usando la local storage. 
-Loading during queries - no lo vi necesareo porque ya la carga de por si era bastante rapida, no obstante se puede implementar e incluso añadir un sleep para que sea visible.
-Datalist in search field - no entendí esto.
-Problems resolution - La lógica más comleja está en el filtrado, por multiopción del tipo, color y genero, anidado tambien si buscas por la keyword
+### Notas Adicionales
 
-Bonus
-Done - Clear filter
+- Todos los filtros disponibles se recuperan de los endpoints.
+- La estructura del proyecto hace referencia a la metodología AEM, utilizando nombres de paquetes como `clientlib` y organizando estilos por componente.
 
-How to test:
-Necesitas tener node instalado en tu computadora.
-Posicionate en la carpeta src.
-Instala el servidor node si no lo tienes aun: npm install -g http-server
-Inicia el servidor: npm install -g http-server
-Puedes accder ahora mediante: http://127.0.0.1:8080/
-Por defecto ya carga el index.html :)
+## Puntos Opcionales
+
+- **SEO, Accesibilidad y Rendimiento**: Se han añadido varias etiquetas meta y etiquetas alternas. Para mejorar el rendimiento, se ha implementado un caché tanto del payload de las API como de las imágenes en memoria.
+- **Documentación**: Pendiente debido a limitaciones de tiempo.
+- **Animaciones**: Se añadieron animaciones en el hover de las tarjetas.
+- **Caché del Payload**: Implementado usando almacenamiento local (local storage).
+- **Indicador de Carga**: No se consideró necesario debido a los rápidos tiempos de carga, aunque se podría implementar con un delay para hacerla visible.
+- **Datalist en el Campo de Búsqueda**: No implementado (duda sobre la funcionalidad deseada).
+- **Resolución de Problemas**: La lógica de filtrado es compleja, manejando filtros multi-opción por tipo, color y género, y además permite búsquedas anidadas por palabra clave.
+
+## Bonus
+- ✅ **Limpiar Filtros**: La funcionalidad para limpiar filtros está implementada.
+
+## Cómo Probar
+
+1. Asegúrate de tener Node.js instalado en tu computadora.
+2. Dirígete a la carpeta `src`.
+3. Instala el servidor de Node si aún no lo tienes e inicialo: 
+   ```bash
+   npm install -g http-server
+   
+   http-server .
+
