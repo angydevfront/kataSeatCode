@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Poke Search</title>
+
+        <!-- Alternate Language and Regional Targeting -->
+        <link rel="alternate" href="https://kataseatpokemon.com" hreflang="en" />
+
+        <!-- Canonical Link -->
+        <link rel="canonical" href="https://kataseatpokemon.com" />
+
+        <meta name="description" content="Discover and filter your favorite Pokémon by type, color, and gender. Use our advanced search to find Pokémon by name and explore an extensive Pokémon catalog.">
+        
+        <!-- SEO Meta Keywords -->
+        <meta name="keywords" content="pokemon, pokemon search, pokemon filter, pokemon by color, pokemon by gender, pokemon by type, pokemon types, pokemon color filter, pokemon gender filter, pokemon type filter, search pokemon by name, pokemon database, pokemon collection, pokemon catalog, pokemon search tool, water type pokemon, fire type pokemon, grass type pokemon, electric pokemon, pokemon list, rare pokemon, find pokemon, pokemon web app, pokemon online, favorite pokemon, pokemon guide, discover pokemon, pokemon search and filter, pokemon explorer">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://kataseatpokemon.com">
+        <meta property="og:title" content="Pokémon Search & Filter | Find Pokémon by Type, Color, and More">
+        <meta property="og:description" content="Discover and filter your favorite Pokémon by type, color, and gender. Use our advanced search to find Pokémon by name and explore an extensive Pokémon catalog.">
+        <meta property="og:image" content="https://yourpokemonwebsite.com/images/preview-image.png">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://kataseatpokemon.com">
+        <meta name="twitter:title" content="Pokémon Search & Filter | Find Pokémon by Type, Color, and More">
+        <meta name="twitter:description" content="Discover and filter your favorite Pokémon by type, color, and gender. Use our advanced search to find Pokémon by name and explore an extensive Pokémon catalog.">
+        <meta name="twitter:image" content="https://yourpokemonwebsite.com/images/preview-image.png">
+
+        <link rel="stylesheet" href="../build/css/index.css">
+        <link rel="stylesheet" href="../build/css/start.css">
+        
+        <link rel="shortcut icon" type="image/png" href="..\src\clientlib-base\images\favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+      </head>
+   <body>
+      <header class="header border">
+         <div class="header__component container">
+            <div class="header__logo">
+               <img src="..\src\clientlib-base\images\logo.png" alt="Logo" class="header__logo-img">
+            </div>
+            <div class="header__search">
+               <input type="text" class="header__search-input silkscreen-regular" placeholder="Search pokemons">
+               <span class="header__search-actions"></span>    
+            </div>
+         </div>
+      </header>
+      <main class="main-content">
+         <div class="main-content__component container">
+            <aside class="filters border">
+                <div class="filters__content">
+                    <h2 class="filters__title">Filters</h2>
+                    <a href="#" class="filters__remove silkscreen-bold">Clear filters</a>
+                </div>
+                <form class="filters__form">
+                    <div class="filters__name">
+                        <label for="type" class="filters__label">Type</label>
+                        <span class="filters__arrow arrow-up"></span>
+                    </div>
+                    <div id="type" name="type" class="type filters__select border">
+                        <div class="filters__type">
+                        </div>
+                    </div>
+                    <div class="filters__name">
+                        <label for="color" class="filters__label">Color</label>
+                        <span class="filters__arrow arrow-up"></span>
+                    </div>
+                    <div class="filters__select border">
+                       <div class="filters__color"></div>
+                    </div>
+                    <div class="filters__name">
+                        <label for="gender" class="filters__label">Gender</label>
+                        <span class="filters__arrow arrow-up"></span>
+                    </div>
+                    <div id="Gender" name="gender" class="filters__select border">
+                        <div class="filters__gener">
+                    </div>
+                </form>
+            </aside>
+            <section class="list">
+                <h2 class="list__title">Choose a pokemon to get more information</h2>
+                <div class="list__component">
+                    <div class="list__container">
+                    </div> 
+                    <div class="found">
+                        <p class="found__text silkscreen-bold"> No items found!
+                        </p>
+                    </div>
+                    <div class="show border">
+                        <a href="#" class="show__button">Show more</a>
+                    </div>
+                </div>
+            </section>
+         </div>
+         <img class="main-content__wave" src="..\src\clientlib-base\images\wave.svg" alt="image wave">
+      </main>
+      <footer class="footer border">
+         <div class="footer__grid container">
+            <div class="footer__widget">
+               <h3 class="footer__heading">Pokemon Company</h3>
+               <p class="footer__text">Discover all the Pokémon in our complete PokéDex!
+                  Explore the world of Pokémon with our detailed species list. 
+                  Here you can find information about each Pokémon, from the classic Bulbasaur, 
+                  Charmander and Squirtle, to the most recent species of all generations
+               </p>
+            </div>
+            <div class="footer__widget">
+               <h3 class="footer__heading">Contact</h3>
+               <p class="footer__text">Av. Pallet Town</p>
+               <nav class="socials">
+                  <a class="socials__link" href="https://facebook.com/pokemongo">
+                    <span class="socials__accessible">Facebook</span>
+                  </a>
+                  <a class="socials__link" href="https://twitter.com">
+                    <span class="socials__accessible">Twitter</span>
+                  </a>
+                  <a class="socials__link" href="https://instagram.com">
+                    <span class="socials__accessible">Instagram</span>
+                  </a>
+                  <a class="socials__link" href="https://youtube.com">
+                    <span class="socials__accessible">YouTube</span>
+                  </a>
+                  <a class="socials__link" href="https://tiktok.com">
+                    <span class="socials__accessible">TikTok</span>
+                  </a>
+               </nav>
+            </div>
+            <div class="footer__widget">
+               <div class="footer__logo">
+                  <img src="..\src\clientlib-base\images\seatcode_logo.jpeg" alt="seat">
+               </div>
+            </div>
+         </div>
+         <p class="footer__copyright">Ángela Padial. All rights reserved</p>
+      </footer>
+      <script src="../build//js/main.js"></script>
+      <script src="../build//js/pokeinterface.js"></script>
+   </body>
+</html>

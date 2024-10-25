@@ -1,0 +1,119 @@
+/* T Y P O G R A P H Y */
+/* Fonts */
+/* Sizes */
+/* C O L O R S */
+/* Base */
+/* Others */
+/* R E S P O N S I V E  B R E A K P O I N T S */
+/* Fonts */
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* others */
+.hidden {
+  display: none;
+}
+.border {
+  border: 3px solid #403838;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid black;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  .arrow-up {
+    display: none;
+  }
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid black;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  .arrow-down {
+    display: none;
+  }
+}
+.display-flex {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+/* Reset some default styles */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Basic page setup */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+p {
+  color: #403838;
+  font-size: 2rem;
+}
+.container {
+  width: 85%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #403838;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+input[type="text"] {
+  border: none;
+  outline: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #403838;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  margin: 0 0 5rem 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 3.2rem;
+}

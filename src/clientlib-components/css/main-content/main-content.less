@@ -1,0 +1,29 @@
+@import '../../../clientlib-base/css/variables.less';
+
+.main-content {
+    &__component {
+        display: grid;
+        grid-template:
+            "filters" 
+            "list";
+        gap:@size-2; 
+        padding:@size-2 0; 
+
+        @media (min-width: @bp-m) {
+            grid-template:
+                "filters list list" ;
+            padding: 8rem 0; 
+            grid-template-columns: 0.75fr 1fr 1fr;
+            height: auto;
+        }
+            
+            .filters {
+                grid-area: filters;
+            }
+            .list {
+                grid-area: list;
+            }
+        }
+    
+        
+}

@@ -36,3 +36,10 @@
    
    http-server .
 4. Abre con el navegador: http://127.0.0.1:8080/src/index.html
+
+## Compilar
+- Este proyecto usa gulp para automatizar el compilado de less a css, generar js, bajo /build. Si lo necesitas usa:
+   ```bash
+   npm install --global gulp-cli
+   gulp css
+   gulp dev

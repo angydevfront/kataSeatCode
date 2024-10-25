@@ -1,0 +1,72 @@
+@import '../../../clientlib-base/css/variables.less';
+@import '../../../clientlib-base/css/mixins.less';
+
+.header {
+    background-color: @white;
+    padding: 3rem 0;
+    .shadow(@secondary-color);
+
+    &__component{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @media (min-width: @bp-m) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo-img {
+        margin-bottom: 3rem;
+        max-width: 20rem;
+
+        @media (min-width: @bp-m) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__search {
+        border-radius: 5rem;
+        display: flex;
+        padding:@size-2;
+        align-items: center;
+        border: .3rem dashed @secondary-color;
+        cursor: pointer; 
+        .shadow(@primary-color);
+
+        @media (min-width: @bp-m) {
+            transition: width .3s ease; 
+        }
+    }
+
+    &__search-input {
+        font-size: 16px;
+        border: none; 
+        font-size: 1.6rem;
+
+        @media (min-width: @bp-m) {
+            width: 0;
+            transition: width 0.3s ease; 
+        }
+        
+        
+
+    }
+    &__search:hover &__search-input {
+        @media (min-width: @bp-m) {
+            width: 25rem; 
+        }
+      
+    }
+    
+
+    &__search-actions{
+        width:@size-3;
+        height:@size-3;
+        background-image: url("../../src/clientlib-base/images/buscar.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

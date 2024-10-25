@@ -1,0 +1,101 @@
+@import '../../../clientlib-base/css/variables.less';
+@import '../../../clientlib-base/css/mixins.less';
+
+
+.list {
+
+    &__title {
+        font-size: @size-2;
+        margin-bottom: 1.5rem;
+        font-family: @fontRoboto;
+
+        @media (min-width: @bp-xs) {
+            text-align: center;
+        }
+    }
+
+    &__component {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    &__container {
+        .grid(1,@size-1);
+
+        @media (min-width: @bp-xs) {
+            .grid(2,@size-1);
+        }
+        @media (min-width: @bp-s) {
+            .grid(3,@size-1);
+        }
+
+        @media (min-width: @bp-m) {
+            .grid(4,@size-1);
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        padding: @size-1;
+        display: flex;
+        align-items: center;
+        border-radius: .5rem;
+        width: 100%;
+        transition-duration: 300ms;
+        background-color: @white;
+
+        &:hover {
+            transform: rotate(4deg) scale(1.3);
+        }
+    }
+
+    &__item-img {
+        max-width: 15rem;
+    }
+    &__item-button {
+        padding: @size-1;
+        background-color: white;
+        transition: background-color .3s ease; 
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: @red;
+        }
+    }
+    
+
+    &__item-title {
+        font-size: @size-2;
+        margin: 0 0 @size-1 0;
+        font-family: @fontRoboto;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &__item-info {
+        margin: .5rem 0 0;
+        font-size: @size-1;
+        width: 100%;
+    }
+}
+.found{
+    width: 50rem;
+    height: auto;
+    &__text {
+        font-size: @size-3;
+        text-align: center;
+    }
+}
+
+.show {
+    .button( @red ,@black ) ;
+    .shadow( @secondary-color);
+}

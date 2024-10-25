@@ -1,0 +1,17 @@
+{
+  "name": "kata",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "angelapadial",
+  "license": "ISC",
+  "description": "kata for Seat Code",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-less": "^5.0.0",
+    "less": "^4.2.0"
+  }
+}

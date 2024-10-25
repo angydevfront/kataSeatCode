@@ -1,0 +1,80 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+/* Reset some default styles */
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* Basic page setup */
+body {
+	font-family: @fontRoboto;
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+p {
+	color: @primary-color;
+	font-size:@size-2;
+}
+
+.container {
+	width: 85%;
+	max-width: 120rem;
+	margin: 0 auto;
+
+	@media (min-width: @bp-m) {
+		width: 95%;
+	}
+}
+
+a {
+	text-decoration: none;
+	background-color: transparent;
+	color: @primary-color;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input[type="text"] {
+	border: none;
+	outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	accent-color: @primary-color;
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0 0 5rem 0;
+}
+
+h1 {
+	font-size:@size-3;
+}
+
+h2 {
+	font-size: 3.6rem;
+}
+
+h3 {
+	font-size: 3.2rem;
+}
+  
+  
+ 
+  
